@@ -4,7 +4,7 @@ from docx import Document
 import random
 import openpyxl
 
-# Set the URL for the news website and send a request to the website
+# Set the URL for the news website and send a request to the website (Change the URL to your Websites)
 
 URL = "https://easyitaliannews.com/"
 page = requests.get(URL)
@@ -24,7 +24,7 @@ if paragraphs:
 else:
     selected_paragraph = "Unable to find any paragraphs on the website"
 
-# Open the Word document
+# Open the Word document - Select your word document here
 
 document = Document("random_paragraph.docx")
 
@@ -46,7 +46,7 @@ if len(words) >= 10:
 else:
     selected_words = words
 
-# Open the Excel file
+# Open the Excel file / Select your excel file here
 
 workbook = openpyxl.load_workbook("existing_file.xlsx")
 
